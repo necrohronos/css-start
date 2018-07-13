@@ -1,6 +1,14 @@
+/*
 * {
     color: red;
+    transition: 0.5s;
 }
+*/
+/*
+body {
+    margin 0;
+}
+*/
 li.list-item {
     color: green;
 }
@@ -9,4 +17,72 @@ ul {
 }
 li.list-item::before {
     content: "*"
+}
+.list-item a:hover {
+    color: aquamarine;
+    transition: 0.5s;
+}
+input:focus {
+    border: 2px solid red;
+    box-shadow: none;
+}
+
+ul li:first-child, 
+ul li:last-child {
+    color: blue;
+}
+
+/*
+.list-item:nth-of-type(even) a {
+    color:burlywood;
+}
+*/
+/*
+.list-item:nth-of-type(3n + 2) a {
+    color:burlywood;
+}
+*/
+.list-item:nth-child(3n + 2) a {
+    color:burlywood;
+}
+input[title] {
+    border: 5px solid yellow;
+}
+input[title="drugi"] {
+    border: 5px solid pink;
+}
+input[title~="opis"] {
+    border: 5px solid aquamarine;
+}
+input[title*="wart"] {
+    border: 5px solid violet;
+}
+input[title^="p"] {
+    border: 5px solid blueviolet;
+}
+/*
+input[title$="y"] {
+    border: 5px solid rgba(30, 98, 24, 0.66);
+}
+*/
+nav {
+    position: fixed;
+    z-index: 1;
+}
+#pozycje {
+    background-color: green;
+    height: 300px;
+    color: white;
+    position: relative;
+    
+}
+#pozycje .red {
+    background-color: red;
+    left: 100px;
+    top: 35px;
+    position: absolute; 
+    margin 0;
+}
+#pozycje .blue {
+    background-color: blue;
 }
